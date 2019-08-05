@@ -2,23 +2,23 @@
 
 if (class_exists('STM_PostType')) {
     $defaultPostTypesOptions = array(
-        'stm_event' => array(
-            'title' => get_theme_mod('post_type_events_title', esc_html__('Event', 'consulting')),
-            'plural_title' => get_theme_mod('post_type_events_plural', esc_html__('Events', 'consulting')),
-            'all_items' => get_theme_mod('post_type_events_all_items', esc_html__('All Events', 'consulting')),
-            'rewrite' => get_theme_mod('post_type_events_rewrite', 'events'),
-            'icon' => get_theme_mod('post_type_events_icon', 'dashicons-calendar-alt'),
-            'has_archive' => get_theme_mod('post_type_events_enable_archive', true),
-            'publicly_queryable' => get_theme_mod('post_type_events_enable_single', true),
-            'supports' => array('title', 'thumbnail', 'editor', 'excerpt', 'author')
-        ),
-        'event_member' => array(
-            'title' => get_theme_mod('post_type_events_title', esc_html__('Member', 'consulting')),
-            'exclude_from_search' => true,
-            'publicly_queryable' => (bool)false,
-            'show_in_menu' => 'edit.php?post_type=stm_event',
-            'supports' => array('title', 'editor')
-        ),
+        // 'stm_event' => array(
+        //     'title' => get_theme_mod('post_type_events_title', esc_html__('Event', 'consulting')),
+        //     'plural_title' => get_theme_mod('post_type_events_plural', esc_html__('Events', 'consulting')),
+        //     'all_items' => get_theme_mod('post_type_events_all_items', esc_html__('All Events', 'consulting')),
+        //     'rewrite' => get_theme_mod('post_type_events_rewrite', 'events'),
+        //     'icon' => get_theme_mod('post_type_events_icon', 'dashicons-calendar-alt'),
+        //     'has_archive' => get_theme_mod('post_type_events_enable_archive', true),
+        //     'publicly_queryable' => get_theme_mod('post_type_events_enable_single', true),
+        //     'supports' => array('title', 'thumbnail', 'editor', 'excerpt', 'author')
+        // ),
+        // 'event_member' => array(
+        //     'title' => get_theme_mod('post_type_events_title', esc_html__('Member', 'consulting')),
+        //     'exclude_from_search' => true,
+        //     'publicly_queryable' => (bool)false,
+        //     'show_in_menu' => 'edit.php?post_type=stm_event',
+        //     'supports' => array('title', 'editor')
+        // ),
         'stm_service' => array(
             'title' => get_theme_mod('post_type_services_title', esc_html__('Service', 'consulting')),
             'plural_title' => get_theme_mod('post_type_services_plural', esc_html__('Services', 'consulting')),
@@ -29,47 +29,47 @@ if (class_exists('STM_PostType')) {
             'publicly_queryable' => get_theme_mod('post_type_services_enable_single', true),
             'supports' => array('title', 'thumbnail', 'editor', 'excerpt')
         ),
-        'stm_careers' => array(
-            'title' => get_theme_mod('post_type_careers_title', esc_html__('Vacancy', 'consulting')),
-            'plural_title' => get_theme_mod('post_type_careers_plural', esc_html__('Vacancies', 'consulting')),
-            'all_items' => get_theme_mod('post_type_careers_all_items', esc_html__('All Vacancies', 'consulting')),
-            'rewrite' => get_theme_mod('post_type_careers_rewrite', 'careers_archive'),
-            'icon' => get_theme_mod('post_type_careers_icon', 'dashicons-id'),
-            'has_archive' => get_theme_mod('post_type_careers_enable_archive', true),
-            'publicly_queryable' => get_theme_mod('post_type_careers_enable_single', true),
-            'supports' => array('title', 'editor')
-        ),
-        'stm_staff' => array(
-            'title' => get_theme_mod('post_type_staff_title', esc_html__('Staff', 'consulting')),
-            'plural_title' => get_theme_mod('post_type_staff_plural', esc_html__('Staff', 'consulting')),
-            'all_items' => get_theme_mod('post_type_staff_all_items', esc_html__('All Staff', 'consulting')),
-            'rewrite' => get_theme_mod('post_type_staff_rewrite', 'staff'),
-            'icon' => get_theme_mod('post_type_careers_icon', 'dashicons-groups'),
-            'has_archive' => get_theme_mod('post_type_staff_enable_archive', true),
-            'publicly_queryable' => get_theme_mod('post_type_staff_enable_single', true),
-            'supports' => array('title', 'excerpt', 'editor', 'thumbnail')
-        ),
-        'stm_works' => array(
-            'title' => get_theme_mod('post_type_works_title', esc_html__('Work', 'consulting')),
-            'plural_title' => get_theme_mod('post_type_works_plural', esc_html__('Works', 'consulting')),
-            'all_items' => get_theme_mod('post_type_works_all_items', esc_html__('All Works', 'consulting')),
-            'rewrite' => get_theme_mod('post_type_works_rewrite', 'works'),
-            'icon' => get_theme_mod('post_type_works_icon', 'dashicons-portfolio'),
-            'has_archive' => get_theme_mod('post_type_works_enable_archive', true),
-            'publicly_queryable' => get_theme_mod('post_type_works_enable_single', true),
-            'supports' => array('title', 'excerpt', 'editor', 'thumbnail')
-        ),
-        'stm_testimonials' => array(
-            'title' => get_theme_mod('post_type_testimonials_title', esc_html__('Testimonial', 'consulting')),
-            'plural_title' => get_theme_mod('post_type_testimonials_plural', esc_html__('Testimonials', 'consulting')),
-            'all_items' => get_theme_mod('post_type_testimonials_all_items', esc_html__('All Testimonials', 'consulting')),
-            'rewrite' => get_theme_mod('post_type_testimonials_rewrite', 'testimonials'),
-            'icon' => get_theme_mod('post_type_services_icon', 'dashicons-testimonial'),
-            'has_archive' => get_theme_mod('post_type_testimonials_enable_archive', true),
-            'supports' => array('title', 'excerpt', 'thumbnail'),
-            'exclude_from_search' => true,
-            'publicly_queryable' => (bool)false
-        ),
+        // 'stm_careers' => array(
+        //     'title' => get_theme_mod('post_type_careers_title', esc_html__('Vacancy', 'consulting')),
+        //     'plural_title' => get_theme_mod('post_type_careers_plural', esc_html__('Vacancies', 'consulting')),
+        //     'all_items' => get_theme_mod('post_type_careers_all_items', esc_html__('All Vacancies', 'consulting')),
+        //     'rewrite' => get_theme_mod('post_type_careers_rewrite', 'careers_archive'),
+        //     'icon' => get_theme_mod('post_type_careers_icon', 'dashicons-id'),
+        //     'has_archive' => get_theme_mod('post_type_careers_enable_archive', true),
+        //     'publicly_queryable' => get_theme_mod('post_type_careers_enable_single', true),
+        //     'supports' => array('title', 'editor')
+        // ),
+        // 'stm_staff' => array(
+        //     'title' => get_theme_mod('post_type_staff_title', esc_html__('Staff', 'consulting')),
+        //     'plural_title' => get_theme_mod('post_type_staff_plural', esc_html__('Staff', 'consulting')),
+        //     'all_items' => get_theme_mod('post_type_staff_all_items', esc_html__('All Staff', 'consulting')),
+        //     'rewrite' => get_theme_mod('post_type_staff_rewrite', 'staff'),
+        //     'icon' => get_theme_mod('post_type_careers_icon', 'dashicons-groups'),
+        //     'has_archive' => get_theme_mod('post_type_staff_enable_archive', true),
+        //     'publicly_queryable' => get_theme_mod('post_type_staff_enable_single', true),
+        //     'supports' => array('title', 'excerpt', 'editor', 'thumbnail')
+        // ),
+        // 'stm_works' => array(
+        //     'title' => get_theme_mod('post_type_works_title', esc_html__('Work', 'consulting')),
+        //     'plural_title' => get_theme_mod('post_type_works_plural', esc_html__('Works', 'consulting')),
+        //     'all_items' => get_theme_mod('post_type_works_all_items', esc_html__('All Works', 'consulting')),
+        //     'rewrite' => get_theme_mod('post_type_works_rewrite', 'works'),
+        //     'icon' => get_theme_mod('post_type_works_icon', 'dashicons-portfolio'),
+        //     'has_archive' => get_theme_mod('post_type_works_enable_archive', true),
+        //     'publicly_queryable' => get_theme_mod('post_type_works_enable_single', true),
+        //     'supports' => array('title', 'excerpt', 'editor', 'thumbnail')
+        // ),
+        // 'stm_testimonials' => array(
+        //     'title' => get_theme_mod('post_type_testimonials_title', esc_html__('Testimonial', 'consulting')),
+        //     'plural_title' => get_theme_mod('post_type_testimonials_plural', esc_html__('Testimonials', 'consulting')),
+        //     'all_items' => get_theme_mod('post_type_testimonials_all_items', esc_html__('All Testimonials', 'consulting')),
+        //     'rewrite' => get_theme_mod('post_type_testimonials_rewrite', 'testimonials'),
+        //     'icon' => get_theme_mod('post_type_services_icon', 'dashicons-testimonial'),
+        //     'has_archive' => get_theme_mod('post_type_testimonials_enable_archive', true),
+        //     'supports' => array('title', 'excerpt', 'thumbnail'),
+        //     'exclude_from_search' => true,
+        //     'publicly_queryable' => (bool)false
+        // ),
         'stm_vc_sidebar' => array(
             'title' => esc_html__('VC Sidebar', 'consulting'),
             'plural_title' => esc_html__('VC Sidebars', 'consulting'),
@@ -80,16 +80,16 @@ if (class_exists('STM_PostType')) {
             'exclude_from_search' => true,
             'publicly_queryable' => (bool)false
         ),
-        'stm_portfolio' => array(
-            'title' => get_theme_mod('post_type_portfolio_title', esc_html__('Portfolio', 'consulting')),
-            'plural_title' => get_theme_mod('post_type_portfolio_plural', esc_html__('Portfolio', 'consulting')),
-            'all_items' => get_theme_mod('post_type_portfolio_all_items', esc_html__('All Portfolio', 'consulting')),
-            'rewrite' => get_theme_mod('post_type_portfolio_rewrite', 'portfolio'),
-            'icon' => get_theme_mod('post_type_portfolio_icon', 'dashicons-portfolio'),
-            'has_archive' => get_theme_mod('post_type_portfolio_enable_archive', true),
-            'publicly_queryable' => get_theme_mod('post_type_portfolio_enable_single', true),
-            'supports' => array('title', 'thumbnail', 'editor', 'excerpt')
-        ),
+        // 'stm_portfolio' => array(
+        //     'title' => get_theme_mod('post_type_portfolio_title', esc_html__('Portfolio', 'consulting')),
+        //     'plural_title' => get_theme_mod('post_type_portfolio_plural', esc_html__('Portfolio', 'consulting')),
+        //     'all_items' => get_theme_mod('post_type_portfolio_all_items', esc_html__('All Portfolio', 'consulting')),
+        //     'rewrite' => get_theme_mod('post_type_portfolio_rewrite', 'portfolio'),
+        //     'icon' => get_theme_mod('post_type_portfolio_icon', 'dashicons-portfolio'),
+        //     'has_archive' => get_theme_mod('post_type_portfolio_enable_archive', true),
+        //     'publicly_queryable' => get_theme_mod('post_type_portfolio_enable_single', true),
+        //     'supports' => array('title', 'thumbnail', 'editor', 'excerpt')
+        // ),
     );
 
     foreach ($defaultPostTypesOptions as $post_type => $data) {

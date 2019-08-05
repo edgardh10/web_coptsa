@@ -78,7 +78,7 @@ function stm_register_startup_screen() {
     }
 
 }
-add_action( 'admin_menu', 'stm_register_startup_screen' );
+// add_action( 'admin_menu', 'stm_register_startup_screen' );
 
 function stm_startup_templates($path) {
 	$path = 'admin/screens/' . $path . '.php';

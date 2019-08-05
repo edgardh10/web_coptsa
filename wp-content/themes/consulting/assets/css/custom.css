@@ -7,3 +7,17 @@
 .third_bg_color, .vc_general.vc_cta3.vc_cta3-color-classic.vc_cta3-style-flat.third_bg_color {
 	background-color: rgba(36, 78, 149, 1);
 }
+
+.mobile_header .header_info .icon_texts{
+	display: none;
+}
+
+.mobile_header .header_info .top_nav_mobile {
+	margin: 0;
+}
+
+@media (max-width: 575px) {
+	.slider_home {
+		display: none;
+	}
+}

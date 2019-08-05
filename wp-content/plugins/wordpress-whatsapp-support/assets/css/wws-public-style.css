@@ -1,0 +1,110 @@
+/* Common CSS for templates */
+.wws-clearfix {
+    clear: both;
+}
+
+.wws-shadow {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.wws-gradient {
+    z-index: -1;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    content: "";
+    pointer-events: none;
+    display: none;
+}
+
+@-webkit-keyframes wws-shake {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    25% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+
+    50% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes wws-shake {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    25% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+
+    50% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+}
+
+.wws-shake-animation {
+    animation: wws-shake 300ms;
+}
+
+/* Plugin GDPR CSS*/
+.wws-popup .wws-gdpr {
+    border-top: 1px dashed #eee;
+    padding: 8px 12px 6px 12px;
+    background: #fff;
+    font-size: 12px;
+    color: #888FBB;
+    user-select: none;
+    outline: none !important;
+}
+
+.wws-popup .wws-gdpr label {
+    color: #888FBB;
+    display: block;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wws-popup .wws-gdpr label input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 4px;
+    padding: 0;
+}
+
+/* Button generator button CSS */
+.wws-shortcode-btn {
+    padding: 4px 10px;
+    margin: 2px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none !important;
+    vertical-align: middle;
+}
+
+.wws-shortcode-btn:hover {
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16);
+}
